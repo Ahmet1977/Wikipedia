@@ -55,7 +55,7 @@ export default function App() {
     fetch(`https://en.wikipedia.org/w/api.php?action=opensearch&search=${searchKeyword}&format=json&origin=*&limit=10`)
     .then(response => response.json())
     .then(jsonResponse=>{
-      // console.log(jsonResponse);
+      
       setmystate(jsonResponse)
     })
   }
