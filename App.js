@@ -49,7 +49,7 @@ export default function App() {
   const [mystate, setmystate] = useState(["",[],[],[]])
 
   const fetchFunc = (searchKeyword) => {
-    // console.log(searchKeyword);
+    //    console.log(searchKeyword);
     
 
     fetch(`https://en.wikipedia.org/w/api.php?action=opensearch&search=${searchKeyword}&format=json&origin=*&limit=10`)
